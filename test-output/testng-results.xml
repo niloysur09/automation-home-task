@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-03T19:30:51 IST" name="Monefy App Test Suite" finished-at="2021-09-03T19:32:09 IST" duration-ms="77914">
+    <groups>
+    </groups>
+    <test started-at="2021-09-03T19:30:51 IST" name="Monefy App Testing Run 1" finished-at="2021-09-03T19:31:31 IST" duration-ms="39432">
+      <class name="test.monefy.TestMonefyApp">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.monefy.TestMonefyApp@1f97cf0d]" started-at="2021-09-03T19:30:51 IST" name="setUp" finished-at="2021-09-03T19:30:59 IST" duration-ms="7394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addNewIncome(java.lang.String, java.lang.String)[pri:0, instance:test.monefy.TestMonefyApp@1f97cf0d]" started-at="2021-09-03T19:30:59 IST" name="addNewIncome" finished-at="2021-09-03T19:31:09 IST" duration-ms="10370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150.50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[savings]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewIncome -->
+        <test-method signature="addNewExpenseFromHomeScreen(java.lang.String, java.lang.String)[pri:1, instance:test.monefy.TestMonefyApp@1f97cf0d]" started-at="2021-09-03T19:31:09 IST" name="addNewExpenseFromHomeScreen" finished-at="2021-09-03T19:31:14 IST" duration-ms="5180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[65.25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[taxi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewExpenseFromHomeScreen -->
+        <test-method signature="addNewExpenseFromExpenseButton(java.lang.String, java.lang.String)[pri:2, instance:test.monefy.TestMonefyApp@1f97cf0d]" started-at="2021-09-03T19:31:14 IST" name="addNewExpenseFromExpenseButton" finished-at="2021-09-03T19:31:24 IST" duration-ms="9730" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15.15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pets]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewExpenseFromExpenseButton -->
+        <test-method signature="validateBalanceCalculation()[pri:3, instance:test.monefy.TestMonefyApp@1f97cf0d]" started-at="2021-09-03T19:31:24 IST" name="validateBalanceCalculation" finished-at="2021-09-03T19:31:30 IST" duration-ms="6016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBalanceCalculation -->
+        <test-method signature="validateIncomeAndExpenseHomeScreen(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:test.monefy.TestMonefyApp@1f97cf0d]" started-at="2021-09-03T19:31:30 IST" name="validateIncomeAndExpenseHomeScreen" finished-at="2021-09-03T19:31:30 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150.50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[65.25]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15.15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIncomeAndExpenseHomeScreen -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.monefy.TestMonefyApp@1f97cf0d]" started-at="2021-09-03T19:31:30 IST" name="tearDown" finished-at="2021-09-03T19:31:31 IST" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.monefy.TestMonefyApp -->
+    </test> <!-- Monefy App Testing Run 1 -->
+    <test started-at="2021-09-03T19:31:31 IST" name="Monefy App Testing Run 2" finished-at="2021-09-03T19:32:09 IST" duration-ms="38425">
+      <class name="test.monefy.TestMonefyApp">
+        <test-method is-config="true" signature="globalSetup()[pri:0, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:30:51 IST" name="globalSetup" finished-at="2021-09-03T19:30:51 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalSetup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:31:31 IST" name="setUp" finished-at="2021-09-03T19:31:38 IST" duration-ms="7137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addNewIncome(java.lang.String, java.lang.String)[pri:0, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:31:38 IST" name="addNewIncome" finished-at="2021-09-03T19:31:48 IST" duration-ms="9671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[75.50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[deposits]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewIncome -->
+        <test-method signature="addNewExpenseFromHomeScreen(java.lang.String, java.lang.String)[pri:1, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:31:48 IST" name="addNewExpenseFromHomeScreen" finished-at="2021-09-03T19:31:53 IST" duration-ms="5240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[65.25]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[house]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewExpenseFromHomeScreen -->
+        <test-method signature="addNewExpenseFromExpenseButton(java.lang.String, java.lang.String)[pri:2, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:31:53 IST" name="addNewExpenseFromExpenseButton" finished-at="2021-09-03T19:32:03 IST" duration-ms="9684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15.35]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bills]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewExpenseFromExpenseButton -->
+        <test-method signature="validateBalanceCalculation()[pri:3, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:32:03 IST" name="validateBalanceCalculation" finished-at="2021-09-03T19:32:08 IST" duration-ms="5956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBalanceCalculation -->
+        <test-method signature="validateIncomeAndExpenseHomeScreen(java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:32:08 IST" name="validateIncomeAndExpenseHomeScreen" finished-at="2021-09-03T19:32:09 IST" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[75.50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[65.25]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15.35]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateIncomeAndExpenseHomeScreen -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:32:09 IST" name="tearDown" finished-at="2021-09-03T19:32:09 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="globalTearDown()[pri:0, instance:test.monefy.TestMonefyApp@272ed83b]" started-at="2021-09-03T19:32:09 IST" name="globalTearDown" finished-at="2021-09-03T19:32:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalTearDown -->
+      </class> <!-- test.monefy.TestMonefyApp -->
+    </test> <!-- Monefy App Testing Run 2 -->
+  </suite> <!-- Monefy App Test Suite -->
+</testng-results>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Monefy App Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Monefy App Testing Set2(failed)">
+    <parameter name="income" value="75.50"/>
+    <parameter name="incomeCategory" value="deposit"/>
+    <parameter name="expenseCategory1" value="taxi"/>
+    <parameter name="expense1" value="65.25"/>
+    <parameter name="expense2" value="15.35"/>
+    <parameter name="expenseCategory2" value="pets"/>
+    <classes>
+      <class name="N26.monefy.TestMonefyApp">
+        <methods>
+          <include name="globalSetup"/>
+          <include name="tearDown"/>
+          <include name="addNewExpenseFromExpenseButton" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="addNewExpenseFromHomeScreen" invocation-numbers="0"/>
+          <include name="validateIncomeAndExpenseHomeScreen" invocation-numbers="0"/>
+          <include name="globalTearDown"/>
+          <include name="validateBalanceCalculation"/>
+        </methods>
+      </class> <!-- N26.monefy.TestMonefyApp -->
+    </classes>
+  </test> <!-- Monefy App Testing Set2(failed) -->
+</suite> <!-- Failed suite [Monefy App Test Suite] -->
