@@ -5,16 +5,11 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.URL;
@@ -23,8 +18,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class BaseTest {
 
     private static AppiumDriverLocalService service;
-    private AndroidDriver<AndroidElement> driver;
-
+    
     @BeforeSuite
     public void globalSetup () throws IOException {
     	AppiumServiceBuilder serviceBuilder = new AppiumServiceBuilder();
@@ -37,25 +31,6 @@ public abstract class BaseTest {
     public void globalTearDown () {
         if (service != null) {
             service.stop();
-        }
-    }
-    
-    @BeforeClass
-    public void setUp() throws IOException {
-        File classpathRoot = new File(System.getProperty("user.dir"));
-        System.out.print(classpathRoot);
-        File appDir = new File(classpathRoot, "/apps");
-        File app = new File(appDir.getCanonicalPath(), "com.monefy.app.lite_2021-08-21.apk");
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("app", app.getAbsolutePath());
-
-        driver = new AndroidDriver<AndroidElement>(getServiceUrl(), capabilities);
-    }
-
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
         }
     }
 
@@ -109,6 +84,7 @@ public abstract class BaseTest {
     public static boolean isNumeric(String str) {
         try {
             BigDecimal newValue = new BigDecimal(str).setScale(2, RoundingMode.DOWN);
+            printMsg("Income/Expense value is numeric!, value: " + newValue.toString());
             return true;
         } catch (NumberFormatException e) {
             return false;

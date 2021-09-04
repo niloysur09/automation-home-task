@@ -1,14 +1,8 @@
 package test.monefy;
 
-import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -16,19 +10,13 @@ import org.testng.annotations.Test;
 
 import test.monefy.screens.*;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 public class TestMonefyApp extends BaseTest {
     private AndroidDriver<AndroidElement> driver;
-    private final String SEARCH_ACTIVITY = ".app.SearchInvoke";
-    private final String ALERT_DIALOG_ACTIVITY = ".app.AlertDialogSamples";
-    private final String PACKAGE = "io.appium.android.apis";
-
+    
     @BeforeClass
     public void setUp() throws IOException {
         File classpathRoot = new File(System.getProperty("user.dir"));
