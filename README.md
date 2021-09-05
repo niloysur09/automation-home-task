@@ -20,6 +20,12 @@ This is the "Test Automation" for "Monefy" mobile app, which contains a set of a
 
 This automation is done using "TestNG" framework, so all the user inputs are configurable from outside (fully Parameterized, no need to open code). Test cases are contained under the "TestMonefyApp.java" with "@Test" annotations and there are other java classes as well for different screens. There is no need to create more test cases as these 5 test cases can be run for any "Category" types which are avaialbe within the app. Only need to input the Income and Expense amounts and Category name and thats all. For Exmaple, the current "testng.xml" file has 2 different sets of inputs. So it can be said that the test cases can cover te above test scenarios for any number or categories, "Just input and Run.."
 
+More over as this Automation tests using Appium and TestNG so it could be run in parallel/in Threads. In thats case at the same time it can be run in parallel for different Categories, that give a good amount of Coverage (all categories of income and expense) and also the excution time will be vry less (compared to if create income and expense using loops via code). So, key points are - 
+
+* High Flexibility
+* Great Coverage
+* Faster Execution time
+
 List of Category names presnet in the app and also can input while running test from testng.xml (just input the name from here thats all) - 
 
  Expense : 
